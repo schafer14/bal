@@ -6,7 +6,7 @@ writing tools and techniques; this is a tool for people comfortable
 writing in a text editor who want to maximise the flexibility of the
 rendering languages. To accomplish this BAL focuses on three goals.
 
-*The Goals of BAL:*
+**The Goals of bal:**
 
 1. Keep the syntax as the language as close to English as possible.
 2. Maximise the ability to express domain specific concepts in the language.
@@ -76,8 +76,9 @@ But you can also write incredibly specific languages.
 A reference implementation of the parser is available in a pre-production status.
 
 The specification of the langauge is described, informally, as a series of unit
-tests.
+tests. See ./test/Spec.hs
 
 Future work:
 
 - building end to end examples of type checkers and parsers.
+- build a cli

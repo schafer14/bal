@@ -1,7 +1,7 @@
 # bal -- Write Better 
 
 Banner's Authoring Language, or bal, is a (informal) specification 
-for a language that emphesises better writing. Everyone has different
+for a language that emphesises a better writing experience. Everyone has different
 writing tools and techniques; this is a tool for people comfortable
 writing in a text editor who want to maximise the flexibility of the
 rendering languages. To accomplish this BAL focuses on three goals.

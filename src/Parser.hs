@@ -88,9 +88,19 @@ parseDirective pos = p
     p = do 
       content <- P.between (CharParser.char '[') (CharParser.char ']') $ contentParser pos
       hsc
-      (label, attrs) <- P.between (CharParser.char '{') (CharParser.char '}') $ dirAttrs
+      (label, attrs) <- P.between (CharParser.char '{') (CharParser.char '}') $ directiveContent
       _ <- P.optional CharParser.newline
       pure $ Directive label attrs content
+
+    directiveContent :: Parser (Text, Map Text Text)
+    directiveContent = (P.try dirAttrs) <|> (P.try dirNoAttrs) 
+
+    dirNoAttrs :: Parser (Text, Map Text Text)
+    dirNoAttrs = do 
+      hsc
+      label <- nonSpace
+      hsc
+      pure (label, mempty)
 
     dirAttrs :: Parser (Text, Map Text Text)
     dirAttrs = do 

@@ -82,6 +82,7 @@ main = hspec $ do
       it "parses dirctives" $ do 
         testParser "[some content]{ link | url = website.com }" `shouldParse` [dir "link" [("url", "website.com")] (txtC "some content")]
         testParser "[xyz]{ link | url = website.com, label = thing }" `shouldParse` [dir "link" [("url", "website.com"), ("label", "thing")] (txtC "xyz")]
+        testParser "[xyz]{ highlight }" `shouldParse` [dir "highlight" [] (txtC "xyz")]
 
 
 

@@ -24,13 +24,13 @@ flexibility and rendering options. To accomplish this BAL focuses on three goals
   or make text /italics/. You can add [custom directives]{ highlight | color = green }.
 
   |> Section
-    title = blocks
+    title = How Blocks Work
     
     You can create custom blocks of content using the '\|>' symbol. These blocks can
     have syntax and symantics relevant to your domain language.
 
     |> Subsection
-      title = nested blocks
+      title = Using Nested Blocks
       
       Blocks can also be nested into arbitrary structures.
 ```

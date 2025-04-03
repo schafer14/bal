@@ -76,7 +76,7 @@ But you can also write incredibly specific languages.
 A reference implementation of the parser is available in a pre-production status.
 
 The specification of the langauge is described, informally, as a series of unit
-tests. See ./test/Spec.hs
+tests. See [tests](./test/Spec.hs)
 
 Future work:
 
